@@ -7,9 +7,12 @@ function getValor($array,$posicion){
 
 function setValor($array,$posicion,$valor){
     $array[$posicion] = $valor;
+    return $array;
 }
 
 $resultado1 = getValor($ciudades,1);
+
+$ciudades = setValor($ciudades,1,"Vitoria");
 
 $resultado2 = getValor($ciudades,1);
 
