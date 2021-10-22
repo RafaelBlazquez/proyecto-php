@@ -43,12 +43,12 @@ echo "<td>Apellidos</td>";
 echo "<td>Telefono</td>";
 echo "<td>Email</td>";
 echo"</tr>";
-for ($i=0;$i<count($agenda);$i++){
+foreach($agenda as $contacto){
     echo"<tr>";
-    echo "<td id=nombre".$i.">".$agenda[$i]["nombre"]."</td>";
-    echo "<td id=apellidos".$i.">".$agenda[$i]["apellidos"]."</td>";
-    echo "<td id=telefono".$i.">".$agenda[$i]["telefono"]."</td>";
-    echo "<td id=email".$i.">".$agenda[$i]["email"]."</td>";
+    echo "<td>".$contacto["nombre"]."</td>";
+    echo "<td>".$contacto["apellidos"]."</td>";
+    echo "<td>".$contacto["telefono"]."</td>";
+    echo "<td>".$contacto["email"]."</td>";
     echo"</tr>";
 }
 echo "</table>";
