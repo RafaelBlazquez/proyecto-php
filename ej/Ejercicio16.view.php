@@ -8,11 +8,7 @@
 </head>
 <body>
     <?php echo
-    "La traduccion de casa es ". $es_ing["casa"]."</br>
-    La traduccion de coche es ". $es_ing["coche"]."</br>
-    La traduccion de nombre es ". $es_ing["nombre"]."</br>
-    La traduccion de cafe es ". $es_ing["cafe"]."</br>
-    La traduccion de monstruo es ". $es_ing["monstruo"]
+    $resultado
     ?> 
     
 </body>
