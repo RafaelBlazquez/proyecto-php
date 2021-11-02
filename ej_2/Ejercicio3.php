@@ -1,12 +1,16 @@
-<?php empezar();
+<?php
 
+    $respuesta = empezar();
+    
     function empezar(){
 
         $numeros = generarNumeros();
 
         mostrarNumeros($numeros);
         $numero = $_GET["numero"];
-        $respuesta =validarDatos($numero) ? contar($numero,$numeros) : ""; 
+        $respuesta =validarDatos($numero) ? contar($numero,$numeros) : "";
+        return $respuesta;
+       
     }
     function validarDatos($numero){
         if (isset($numero)){
@@ -36,7 +40,7 @@
         for($i = 0; $i<count($numeros);$i++){
             $numero==$numeros[$i] ? $respuesta++ : "";    
         }
-        echo "<br>".$respuesta;
+        return $respuesta;
     }
     function mostrarNumeros($numeros){
         $separado_por_comas = implode(" --- " , $numeros);
