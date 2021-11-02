@@ -8,7 +8,7 @@
 </head>
 <body>
     
-    <p><b>El numero aparece <?php echo $respuesta?> veces en la respursta</b></p>
+    <p><b>El numero aparece <?php echo $respuesta?> veces en la respuesta</b></p>
     <form action="Ejercicio3.php" method="GET">
     
     <label for="numero">Introduce numero a buscar</label><input name="numero"type="text" id="numero"></br></br>
