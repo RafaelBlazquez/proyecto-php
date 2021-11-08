@@ -1,0 +1,24 @@
+CREATE TABLE alumno(
+    id int auto_increment,
+    nombre varchar(100),
+    apellidos varchar(100),
+    email varchar(100),
+    edad int(3),
+    PRIMARY KEY(id)
+);
+
+INSERT INTO alumno(nombre,apellidos,email,edad) 
+values('rafael','blazquez','leorafardo@gmail.com','20');
+
+INSERT INTO alumno(nombre,apellidos,email,edad) 
+values('mikel','barea','bareaaaaa@gmail.com','21');
+
+CREATE TABLE listaCompra(
+    id int auto_increment,
+    nombre varchar(100),
+    PRIMARY KEY(id) 
+);
+
+INSERT INTO listaCompra(nombre) values ('pan');
+
+INSERT INTO listaCompra(nombre) values ('leche');
